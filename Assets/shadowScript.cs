@@ -5,12 +5,10 @@ public class shadowScript : MonoBehaviour {
 	public bool isGrounded = false;
 	public GameObject walkAnim;
 	SpriteRenderer sr;
-	Vector3 startPos;
 	GameObject startPar;
 	// Use this for initialization
 	void Start () {
 		sr = this.gameObject.GetComponent<SpriteRenderer>();
-		startPos = this.gameObject.transform.localPosition;
 		startPar = this.gameObject.transform.parent.gameObject;
 		if(startPar) transform.parent = null;
 	}

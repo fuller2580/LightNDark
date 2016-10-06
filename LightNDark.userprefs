@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FurBall2D\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\orbScript.cs">
     <Files>
-      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="40" Column="11" />
+      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="39" Column="13" />
+      <File FileName="Assets\shadowScript.cs" Line="11" Column="55" />
+      <File FileName="Assets\lightScript.cs" Line="7" Column="14" />
+      <File FileName="Assets\gameManager.cs" Line="18" Column="9" />
+      <File FileName="Assets\orbScript.cs" Line="18" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
