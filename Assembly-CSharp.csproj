@@ -52,6 +52,7 @@
      <Compile Include="Assets\FurBall2D\Scripts\PlayerController.cs" />
      <Compile Include="Assets\followMouse.cs" />
      <Compile Include="Assets\lightScript.cs" />
+     <Compile Include="Assets\shadowScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

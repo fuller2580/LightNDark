@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private Animator anim;
 	private bool isGrounded = false;
+	public shadowScript ss;
 
 
 	// Use this for initialization
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		ss.isGrounded = isGrounded;
 	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
 		{
 			rb2d.AddForce(new Vector2(0,jumpForce));
@@ -72,13 +73,13 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if (isGrounded) 
+		if (isGrounded){
 			doubleJump = false;
-
+		}
 
 		float hor = Input.GetAxis ("Horizontal");
 
-		anim.SetFloat ("Speed", Mathf.Abs (hor));
+		anim.SetFloat ("Speed", Mathf.Abs (hor/2));
 
 		rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
 		  
