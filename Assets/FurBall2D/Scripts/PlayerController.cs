@@ -21,15 +21,16 @@ public class PlayerController : MonoBehaviour {
 	private Animator anim;
 	private bool isGrounded = false;
 	public shadowScript ss;
-
+	Vector3 startSpot;
 
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		//cloudanim = GetComponent<Animator>();
-
+		DontDestroyOnLoad(this.gameObject);
 		Cloud = GameObject.Find("Cloud");
+		setStartSpot();
   		//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
 	}
 
@@ -40,6 +41,14 @@ public class PlayerController : MonoBehaviour {
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 		//	cloudanim.Play("cloud");	
 
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D col){
+
+		if(col.gameObject.tag == "portal"){
+			Application.LoadLevel("level2");
+			setStartSpot();
 		}
 	}
 
@@ -67,7 +76,7 @@ public class PlayerController : MonoBehaviour {
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 			//cloudanim.Play("cloud");
 		}
-
+		if(this.gameObject.transform.position.y < -20)resetPos();
 	}
 
 
@@ -102,5 +111,14 @@ public class PlayerController : MonoBehaviour {
 		myScale.x *= -1;
 		transform.localScale = myScale;
 	}
-
+	public void setStartSpot(){
+		Rigidbody2D rig = this.gameObject.GetComponent<Rigidbody2D>();
+		rig.velocity = Vector3.zero;
+		startSpot = this.transform.position;
+	}
+	void resetPos(){
+		Rigidbody2D rig = this.gameObject.GetComponent<Rigidbody2D>();
+		rig.velocity = Vector3.zero;
+		this.gameObject.transform.position = startSpot;
+	}
 }

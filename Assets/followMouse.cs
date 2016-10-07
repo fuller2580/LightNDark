@@ -6,6 +6,7 @@ public class followMouse : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		cam = Camera.main;
+		DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame

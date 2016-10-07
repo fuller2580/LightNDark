@@ -49,17 +49,27 @@
      <Compile Include="Assets\FurBall2D\Scripts\DestroyCloud.cs" />
      <Compile Include="Assets\FurBall2D\Scripts\HitVelDetection.cs" />
      <Compile Include="Assets\FurBall2D\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\ParticleSpiralEffect.cs" />
      <Compile Include="Assets\followMouse.cs" />
      <Compile Include="Assets\gameManager.cs" />
      <Compile Include="Assets\lightScript.cs" />
      <Compile Include="Assets\orbScript.cs" />
      <Compile Include="Assets\shadowScript.cs" />
+     <Compile Include="Assets\spinSpin.cs" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{454EBD85-37AD-16BA-274C-5B1B933A8103}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

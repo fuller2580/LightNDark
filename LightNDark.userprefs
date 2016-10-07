@@ -1,16 +1,21 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\orbScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FurBall2D\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="39" Column="13" />
-      <File FileName="Assets\shadowScript.cs" Line="11" Column="55" />
+      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="79" Column="60" />
+      <File FileName="Assets\shadowScript.cs" Line="1" Column="1" />
       <File FileName="Assets\lightScript.cs" Line="7" Column="14" />
-      <File FileName="Assets\gameManager.cs" Line="18" Column="9" />
-      <File FileName="Assets\orbScript.cs" Line="18" Column="29" />
+      <File FileName="Assets\gameManager.cs" Line="11" Column="3" />
+      <File FileName="Assets\orbScript.cs" Line="23" Column="1" />
+      <File FileName="Assets\ParticleSpiralEffect.cs" Line="19" Column="71" />
+      <File FileName="Assets\spinSpin.cs" Line="13" Column="62" />
+      <File FileName="Assets\followMouse.cs" Line="9" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Andrew\Desktop\EvilSheepGaming\LightNDark\LightNDark\Assets\orbScript.cs" line="23" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

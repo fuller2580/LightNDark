@@ -3,9 +3,11 @@ using System.Collections;
 
 public class gameManager : MonoBehaviour {
 	float lightPower = 0;
+
 	// Use this for initialization
 	void Start () {
-	
+		DontDestroyOnLoad(this.gameObject);
+
 	}
 	
 	// Update is called once per frame
@@ -19,4 +21,5 @@ public class gameManager : MonoBehaviour {
 		lightPower = lp;
 		print(lightPower);
 	}
+
 }
