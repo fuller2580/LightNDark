@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 
 		if(col.gameObject.tag == "portal"){
+			transform.position = col.gameObject.transform.position;
 			Application.LoadLevel("level2");
 			setStartSpot();
 		}
