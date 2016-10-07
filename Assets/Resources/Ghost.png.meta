@@ -1,0 +1,1716 @@
+fileFormatVersion: 2
+guid: f9dd1fff81c517d47af917bdf104aee8
+timeCreated: 1475818028
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ghostWalk0
+    21300002: ghostWalk1
+    21300004: ghostWalk2
+    21300006: ghostWalk3
+    21300008: ghostWalk4
+    21300010: ghostWalk5
+    21300012: ghostWalk6
+    21300014: ghostWalk7
+    21300016: ghostWalk8
+    21300018: Ghost_9
+    21300020: Ghost_10
+    21300022: Ghost_11
+    21300024: Ghost_12
+    21300026: Ghost_13
+    21300028: Ghost_14
+    21300030: Ghost_15
+    21300032: Ghost_16
+    21300034: Ghost_17
+    21300036: Ghost_18
+    21300038: Ghost_19
+    21300040: Ghost_20
+    21300042: Ghost_21
+    21300044: Ghost_22
+    21300046: Ghost_23
+    21300048: Ghost_24
+    21300050: Ghost_25
+    21300052: Ghost_26
+    21300054: Ghost_27
+    21300056: Ghost_28
+    21300058: Ghost_29
+    21300060: Ghost_30
+    21300062: Ghost_31
+    21300064: Ghost_32
+    21300066: Ghost_33
+    21300068: Ghost_34
+    21300070: Ghost_35
+    21300072: Ghost_36
+    21300074: Ghost_37
+    21300076: Ghost_38
+    21300078: Ghost_39
+    21300080: Ghost_40
+    21300082: Ghost_41
+    21300084: Ghost_42
+    21300086: Ghost_43
+    21300088: Ghost_44
+    21300090: Ghost_45
+    21300092: Ghost_46
+    21300094: Ghost_47
+    21300096: Ghost_48
+    21300098: Ghost_49
+    21300100: Ghost_50
+    21300102: Ghost_51
+    21300104: Ghost_52
+    21300106: Ghost_53
+    21300108: Ghost_54
+    21300110: Ghost_55
+    21300112: Ghost_56
+    21300114: Ghost_57
+    21300116: Ghost_58
+    21300118: Ghost_59
+    21300120: Ghost_60
+    21300122: Ghost_61
+    21300124: Ghost_62
+    21300126: Ghost_63
+    21300128: Ghost_64
+    21300130: Ghost_65
+    21300132: Ghost_66
+    21300134: Ghost_67
+    21300136: Ghost_68
+    21300138: Ghost_69
+    21300140: Ghost_70
+    21300142: Ghost_71
+    21300144: Ghost_72
+    21300146: Ghost_73
+    21300148: Ghost_74
+    21300150: Ghost_75
+    21300152: Ghost_76
+    21300154: Ghost_77
+    21300156: Ghost_78
+    21300158: Ghost_79
+    21300160: Ghost_80
+    21300162: Ghost_81
+    21300164: Ghost_82
+    21300166: Ghost_83
+    21300168: Ghost_84
+    21300170: Ghost_85
+    21300172: Ghost_86
+    21300174: Ghost_87
+    21300176: Ghost_88
+    21300178: Ghost_89
+    21300180: Ghost_90
+    21300182: Ghost_91
+    21300184: Ghost_92
+    21300186: Ghost_93
+    21300188: Ghost_94
+    21300190: Ghost_95
+    21300192: Ghost_96
+    21300194: Ghost_97
+    21300196: Ghost_98
+    21300198: Ghost_99
+    21300200: Ghost_100
+    21300202: Ghost_101
+    21300204: Ghost_102
+    21300206: Ghost_103
+    21300208: Ghost_104
+    21300210: Ghost_105
+    21300212: Ghost_106
+    21300214: Ghost_107
+    21300216: Ghost_108
+    21300218: Ghost_109
+    21300220: Ghost_110
+    21300222: Ghost_111
+    21300224: Ghost_112
+    21300226: Ghost_113
+    21300228: Ghost_114
+    21300230: Ghost_115
+    21300232: Ghost_0
+    21300234: Ghost_1
+    21300236: Ghost_2
+    21300238: Ghost_3
+    21300240: Ghost_4
+    21300242: Ghost_5
+    21300244: Ghost_6
+    21300246: Ghost_7
+    21300248: Ghost_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ghost_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 291
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 33}
+        - {x: -10.5, y: 33}
+        - {x: -20.5, y: 26}
+        - {x: -20.5, y: -33}
+        - {x: 9.5, y: -33}
+        - {x: 19.5, y: -26}
+        - {x: 20.5, y: -25}
+        - {x: 20.5, y: 32}
+    - name: Ghost_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 291
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: -33.5}
+        - {x: 4.5, y: -33.5}
+        - {x: 20.5, y: -28.5}
+        - {x: 20.5, y: 33.5}
+        - {x: -15.5, y: 33.5}
+        - {x: -20.5, y: 19.5}
+    - name: Ghost_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 291
+        width: 39
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 34.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -34.5}
+        - {x: 4.5, y: -34.5}
+        - {x: 19.5, y: -30.5}
+        - {x: 19.5, y: 34.5}
+    - name: Ghost_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 291
+        width: 45
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 28.5}
+        - {x: 15.5, y: 35.5}
+        - {x: -12.5, y: 35.5}
+        - {x: -22.5, y: 9.5}
+        - {x: -22.5, y: -35.5}
+        - {x: 3.5, y: -35.5}
+        - {x: 21.5, y: -28.5}
+        - {x: 22.5, y: -20.5}
+        - {x: 22.5, y: 19.5}
+    - name: Ghost_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 291
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 35.5}
+        - {x: -23, y: 0.5}
+        - {x: -23, y: -35.5}
+        - {x: 23, y: -35.5}
+        - {x: 23, y: 35.5}
+    - name: Ghost_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 291
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 31}
+        - {x: 13, y: 34}
+        - {x: -8, y: 34}
+        - {x: -18, y: 25}
+        - {x: -21, y: -6}
+        - {x: -21, y: -34}
+        - {x: 8, y: -34}
+        - {x: 21, y: -29}
+        - {x: 21, y: 20}
+        - {x: 18, y: 27}
+    - name: Ghost_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 291
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 33}
+        - {x: -17.5, y: 23}
+        - {x: -14.5, y: 20}
+        - {x: -6.5, y: 20}
+        - {x: -10.5, y: 20}
+        - {x: -14.5, y: 19}
+        - {x: -17.5, y: 13}
+        - {x: -20.5, y: -4}
+        - {x: -20.5, y: -33}
+        - {x: 7.5, y: -33}
+        - {x: 20.5, y: -31}
+        - {x: 20.5, y: 20}
+        - {x: 14.5, y: 33}
+    - name: Ghost_7
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 291
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 33}
+        - {x: -20.5, y: 1}
+        - {x: -12.5, y: 0}
+        - {x: -12.5, y: 2}
+        - {x: -8.5, y: 2}
+        - {x: -10.5, y: 2}
+        - {x: -14.5, y: -3}
+        - {x: -18.5, y: -9}
+        - {x: -20.5, y: -18}
+        - {x: -19.5, y: -21}
+        - {x: -20.5, y: -24}
+        - {x: -20.5, y: -33}
+        - {x: 20.5, y: -33}
+        - {x: 20.5, y: 25}
+        - {x: 14.5, y: 33}
+    - name: Ghost_8
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 291
+        width: 43
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 34}
+        - {x: -21.5, y: -8}
+        - {x: -21.5, y: -34}
+        - {x: 12.5, y: -34}
+        - {x: 21.5, y: -30}
+        - {x: 21.5, y: 29}
+        - {x: 15.5, y: 34}
+    - name: Ghost_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 200
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 35.5}
+        - {x: -20.5, y: 34.5}
+        - {x: -25.5, y: 6.5}
+        - {x: -25.5, y: -35.5}
+        - {x: 2.5, y: -35.5}
+        - {x: 25.5, y: -26.5}
+        - {x: 25.5, y: 35.5}
+    - name: Ghost_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 200
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 8.5}
+        - {x: 25.5, y: 36.5}
+        - {x: -5.5, y: 36.5}
+        - {x: -25.5, y: 28.5}
+        - {x: -25.5, y: -36.5}
+        - {x: 5.5, y: -36.5}
+        - {x: 25.5, y: -30.5}
+        - {x: 25.5, y: -18.5}
+        - {x: 19.5, y: -15.5}
+    - name: Ghost_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 200
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 33}
+        - {x: -18, y: 23}
+        - {x: -20, y: 11}
+        - {x: -20, y: -33}
+        - {x: 11, y: -33}
+        - {x: 20, y: -31}
+        - {x: 20, y: 33}
+    - name: Ghost_12
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 200
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 34.5}
+        - {x: -13.5, y: 33.5}
+        - {x: -14.5, y: 21.5}
+        - {x: -6.5, y: 18.5}
+        - {x: -1.5, y: 18.5}
+        - {x: -3.5, y: 18.5}
+        - {x: -10.5, y: 16.5}
+        - {x: -27.5, y: -11.5}
+        - {x: -29.5, y: -20.5}
+        - {x: -29.5, y: -34.5}
+        - {x: 6.5, y: -34.5}
+        - {x: 22.5, y: -27.5}
+        - {x: 29.5, y: 3.5}
+        - {x: 29.5, y: 34.5}
+    - name: Ghost_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: -4}
+        - {x: 32.5, y: 31}
+        - {x: -8.5, y: 31}
+        - {x: -15.5, y: 21}
+        - {x: -9.5, y: 18}
+        - {x: -21.5, y: 8}
+        - {x: -32.5, y: -4}
+        - {x: -32.5, y: -31}
+        - {x: 0.5, y: -31}
+        - {x: 26.5, y: -28}
+        - {x: 31.5, y: -22}
+        - {x: 31.5, y: -19}
+        - {x: 30.5, y: -16}
+    - name: Ghost_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 199
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 26}
+        - {x: -31.5, y: 10}
+        - {x: -31.5, y: -26}
+        - {x: 31.5, y: -26}
+        - {x: 31.5, y: 25}
+        - {x: 27.5, y: 26}
+    - name: Ghost_15
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 184
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 26.5}
+        - {x: -29, y: 24.5}
+        - {x: -30, y: 23.5}
+        - {x: -30, y: -18.5}
+        - {x: -27, y: -24.5}
+        - {x: -14, y: -26.5}
+        - {x: 30, y: -26.5}
+        - {x: 30, y: 14.5}
+        - {x: 18, y: 26.5}
+    - name: Ghost_16
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 179
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: -7}
+        - {x: 22.5, y: -7}
+        - {x: 31.5, y: -6}
+        - {x: 31.5, y: 26}
+        - {x: -31.5, y: 26}
+        - {x: -31.5, y: 1}
+        - {x: -22.5, y: -6}
+        - {x: -16.5, y: -6}
+        - {x: -29.5, y: -6}
+        - {x: -31.5, y: -9}
+        - {x: -31.5, y: -17}
+        - {x: -19.5, y: -26}
+        - {x: 27.5, y: -26}
+        - {x: 31.5, y: -20}
+        - {x: 31.5, y: -11}
+        - {x: 25.5, y: -7}
+    - name: Ghost_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 200
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 27}
+        - {x: -31.5, y: 0}
+        - {x: -31.5, y: -27}
+        - {x: 24.5, y: -27}
+        - {x: 31.5, y: -26}
+        - {x: 31.5, y: 26}
+        - {x: 26.5, y: 27}
+    - name: Ghost_18
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 97
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 35.5}
+        - {x: -27, y: 29.5}
+        - {x: -27, y: 0.5}
+        - {x: -13, y: -1.5}
+        - {x: -7, y: 0.5}
+        - {x: -12, y: -5.5}
+        - {x: -15, y: -10.5}
+        - {x: -15, y: -11.5}
+        - {x: -13, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -7, y: -13.5}
+        - {x: -27, y: -21.5}
+        - {x: -27, y: -30.5}
+        - {x: -17, y: -35.5}
+        - {x: 25, y: -35.5}
+        - {x: 27, y: -32.5}
+        - {x: 27, y: 9.5}
+        - {x: 10, y: 35.5}
+    - name: Ghost_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 97
+        width: 53
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_20
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 114
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -27.5}
+        - {x: -18.5, y: -29.5}
+        - {x: -9.5, y: -29.5}
+        - {x: -8.5, y: -28.5}
+        - {x: -9.5, y: -25.5}
+        - {x: -17.5, y: -25.5}
+      - - {x: -14.5, y: 29.5}
+        - {x: -27.5, y: 17.5}
+        - {x: -27.5, y: -16.5}
+        - {x: -8.5, y: -16.5}
+        - {x: -5.5, y: -14.5}
+        - {x: -2.5, y: -16.5}
+        - {x: -2.5, y: -15.5}
+        - {x: -3.5, y: -16.5}
+        - {x: -5.5, y: -15.5}
+        - {x: -6.5, y: -16.5}
+        - {x: -10.5, y: -16.5}
+        - {x: -12.5, y: -18.5}
+        - {x: -11.5, y: -21.5}
+        - {x: -4.5, y: -22.5}
+        - {x: -7.5, y: -26.5}
+        - {x: -6.5, y: -29.5}
+        - {x: 26.5, y: -29.5}
+        - {x: 27.5, y: -26.5}
+        - {x: 27.5, y: 5.5}
+        - {x: 3.5, y: 29.5}
+      - - {x: -22.5, y: -15.5}
+        - {x: -27.5, y: -19.5}
+        - {x: -26.5, y: -22.5}
+        - {x: -19.5, y: -22.5}
+        - {x: -17.5, y: -21.5}
+        - {x: -16.5, y: -17.5}
+        - {x: -18.5, y: -15.5}
+    - name: Ghost_21
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 100
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 21}
+        - {x: -11.5, y: 20}
+        - {x: -28.5, y: 12}
+        - {x: -28.5, y: -20}
+        - {x: -24.5, y: -21}
+        - {x: 28.5, y: -21}
+        - {x: 28.5, y: 3}
+        - {x: 11.5, y: 21}
+    - name: Ghost_22
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 100
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 100
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_24
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 100
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_25
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 101
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_26
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 101
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 33}
+        - {x: -17.5, y: 32}
+        - {x: -17.5, y: -27}
+        - {x: -11.5, y: -33}
+        - {x: 17.5, y: -33}
+        - {x: 17.5, y: 33}
+    - name: Ghost_28
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 54
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 53
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_30
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 53
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_31
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 52
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_32
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 50
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_33
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 63
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_34
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_35
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_36
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 63
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_37
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 63
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_38
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 63
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_39
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_40
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 7
+        width: 49
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 50}
+        - {x: -24.5, y: -50}
+        - {x: 24.5, y: -50}
+        - {x: 24.5, y: 50}
+    - name: Ghost_41
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 54
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_43
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_44
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 54
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_45
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 42
+        width: 124
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_46
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 45
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_47
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 37
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_48
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 37
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_49
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 37
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_50
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 37
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_51
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 37
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_52
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 37
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_53
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 37
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_54
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 34
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_55
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 37
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_56
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 45
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_57
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 45
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_58
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 45
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_59
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_60
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 37
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_61
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_62
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_63
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 37
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_64
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_65
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 34
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_66
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_67
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_68
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_69
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 7
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: -7}
+        - {x: -11, y: -16}
+        - {x: 21, y: -16}
+        - {x: 21, y: 16}
+        - {x: -12, y: 16}
+        - {x: -21, y: 13}
+    - name: Ghost_70
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 8
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 16}
+        - {x: -20.5, y: 0}
+        - {x: -20.5, y: -13}
+        - {x: -12.5, y: -16}
+        - {x: 10.5, y: -16}
+        - {x: 20.5, y: -3}
+        - {x: 20.5, y: 9}
+        - {x: 18.5, y: 16}
+    - name: Ghost_71
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 8
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 16.5}
+        - {x: -22.5, y: 8.5}
+        - {x: -22.5, y: -7.5}
+        - {x: -14.5, y: -14.5}
+        - {x: -10.5, y: -16.5}
+        - {x: 10.5, y: -16.5}
+        - {x: 22.5, y: -1.5}
+        - {x: 22.5, y: 16.5}
+    - name: Ghost_72
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 11
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_73
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 29
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_74
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 29
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_75
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 27
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_76
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 29
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_77
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 21
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_79
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 19
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_80
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 21
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_81
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 21
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_82
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 21
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_83
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_84
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_85
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_86
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 29
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_87
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_88
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 26
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_89
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 29
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_90
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_91
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 29
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_92
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 26
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_93
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 29
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_94
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 29
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_95
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 29
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_96
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 29
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_97
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_98
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_99
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 18
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_100
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_101
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_102
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 21
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_103
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 10
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_104
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 10
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_105
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 13
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_106
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 13
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_107
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_108
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_109
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 13
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_110
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_111
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_112
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_113
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_114
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 13
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghost_115
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

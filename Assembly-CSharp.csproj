@@ -52,6 +52,7 @@
      <Compile Include="Assets\ParticleSpiralEffect.cs" />
      <Compile Include="Assets\followMouse.cs" />
      <Compile Include="Assets\gameManager.cs" />
+     <Compile Include="Assets\ghostAI.cs" />
      <Compile Include="Assets\lightScript.cs" />
      <Compile Include="Assets\orbScript.cs" />
      <Compile Include="Assets\shadowScript.cs" />
