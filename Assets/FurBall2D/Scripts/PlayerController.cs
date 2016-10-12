@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PlayerController : MonoBehaviour {
 	
@@ -23,8 +27,16 @@ public class PlayerController : MonoBehaviour {
 	public shadowScript ss;
 	Vector3 startSpot;
 
+	public List<ghostAI> ghosts;
+
+	public float fear = 0;
+	public Image fearBar;
+
 	// Use this for initialization
 	void Start () {
+		if(ghosts == null){
+			ghosts = new List<ghostAI>();
+		}
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		//cloudanim = GetComponent<Animator>();
@@ -47,9 +59,13 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 
 		if(col.gameObject.tag == "portal"){
+			ghosts.Clear();
 			transform.position = col.gameObject.transform.position;
-			Application.LoadLevel("level2");
 			setStartSpot();
+			string LN = col.gameObject.GetComponent<spinSpin>().levelName;
+			SceneManager.LoadSceneAsync(LN);
+			//Application.LoadLevel("level2");
+			resetPos();
 		}
 	}
 
@@ -57,6 +73,8 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(fear > 100) fear = 100;
+		fearBar.fillAmount = fear/100;
 		ss.isGrounded = isGrounded;
 	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
 		{
@@ -101,6 +119,15 @@ public class PlayerController : MonoBehaviour {
 			Flip ();
 		 
 		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
+
+
+		if(ghosts.Count > 0){
+			for(int i = 0; i < ghosts.Count; i++){
+				if(ghosts[i].distance < 3 && !ghosts[i].anim.GetBool("dead")){
+					fear += Time.deltaTime;
+				}
+			}
+		}
 	}
 
 

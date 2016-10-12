@@ -8,9 +8,11 @@ public class shadowScript : MonoBehaviour {
 	GameObject startPar;
 	// Use this for initialization
 	void Start () {
+		
 		sr = this.gameObject.GetComponent<SpriteRenderer>();
 		startPar = this.gameObject.transform.parent.gameObject;
 		if(startPar) transform.parent = null;
+		DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame

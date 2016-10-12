@@ -50,6 +50,7 @@
      <Compile Include="Assets\FurBall2D\Scripts\HitVelDetection.cs" />
      <Compile Include="Assets\FurBall2D\Scripts\PlayerController.cs" />
      <Compile Include="Assets\ParticleSpiralEffect.cs" />
+     <Compile Include="Assets\dontDestroy.cs" />
      <Compile Include="Assets\followMouse.cs" />
      <Compile Include="Assets\gameManager.cs" />
      <Compile Include="Assets\ghostAI.cs" />

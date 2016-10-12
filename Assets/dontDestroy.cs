@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class spinSpin : MonoBehaviour {
-	public float speed;
-	public string levelName;
+public class dontDestroy : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
-	
+		DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.forward * Time.deltaTime * speed);
+	
 	}
 }
