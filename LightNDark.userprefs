@@ -1,16 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ghostAI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FurBall2D\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="50" Column="59" />
-      <File FileName="Assets\shadowScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\lightScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\gameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\orbScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\ParticleSpiralEffect.cs" Line="1" Column="1" />
-      <File FileName="Assets\spinSpin.cs" Line="1" Column="1" />
-      <File FileName="Assets\followMouse.cs" Line="1" Column="1" />
-      <File FileName="Assets\ghostAI.cs" Line="25" Column="25" />
+      <File FileName="Assets\Resources\Scripts\ghostAI.cs" Line="27" Column="44" />
+      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="137" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

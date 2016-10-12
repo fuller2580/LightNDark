@@ -7,6 +7,7 @@ public class ghostAI : MonoBehaviour {
 	SpriteRenderer SR;
 	[HideInInspector] public Animator anim;
 	[HideInInspector] public float distance;
+	AudioSource audio;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -14,14 +15,19 @@ public class ghostAI : MonoBehaviour {
 		SR = this.gameObject.GetComponent<SpriteRenderer>();
 		anim = this.gameObject.GetComponent<Animator>();
 		player.GetComponent<PlayerController>().ghosts.Add(this);
+		audio = this.gameObject.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		distance = Vector3.Distance(player.transform.position,this.transform.position);
-		print(distance);
+		//print(distance);
 		if(distance < 20){
 			moveToPlayer();
+			if(distance < 3 && !anim.GetBool("dead")){
+				if(!audio.isPlaying)audio.Play();
+			}
+			else if(audio.isPlaying)audio.Pause();
 		}
 		if(SR.color.a == 0) anim.SetBool("dead", false);
 		else anim.SetBool("dead", true);

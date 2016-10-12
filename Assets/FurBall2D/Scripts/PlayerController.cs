@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 	private Animator cloudanim;
 	public GameObject Cloud;
 
+	int lives = 3;
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 	Vector3 startSpot;
 
 	public List<ghostAI> ghosts;
+	public List<Image> livesImg;
 
 	public float fear = 0;
 	public Image fearBar;
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(fear > 100) fear = 100;
+		else if(fear < 0) fear = 0;
 		fearBar.fillAmount = fear/100;
 		ss.isGrounded = isGrounded;
 	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
@@ -95,7 +98,10 @@ public class PlayerController : MonoBehaviour {
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 			//cloudanim.Play("cloud");
 		}
-		if(this.gameObject.transform.position.y < -20)resetPos();
+		if(this.gameObject.transform.position.y < -20){
+			resetPos();
+			loseLife();
+		}
 	}
 
 
@@ -128,9 +134,28 @@ public class PlayerController : MonoBehaviour {
 				}
 			}
 		}
+		fear -= Time.deltaTime*.1f;
 	}
 
+	void loseLife(){
+		lives --;
+		print(lives);
+		if(lives>=0){
+			for(int i = 0; i < livesImg.Count; i++){
+				livesImg[i].enabled = false;
+			}
+			if(lives > 0){
+				for(int i = 0; i < lives; i++){
+					livesImg[i].enabled = true;
+				}
+			}
+		}
+		else endGame();
+	}
 
+	void endGame(){
+		print("eventually will go to lose screen");
+	}
 	
 	public void Flip()
 	{
