@@ -117,9 +117,16 @@ public class PlayerController : MonoBehaviour {
 			setStartSpot();
 			resetPos();
 		}
-		else if(Input.GetKeyDown(KeyCode.Alpha5)){
+		else if(Input.GetKeyDown(KeyCode.Alpha3)){
 			ghosts.Clear();
-			SceneManager.LoadSceneAsync("level5");
+			SceneManager.LoadSceneAsync("level3");
+			transform.position = new Vector3(-5.5f,2f,1f);
+			setStartSpot();
+			resetPos();
+		}
+		else if(Input.GetKeyDown(KeyCode.Alpha4)){
+			ghosts.Clear();
+			SceneManager.LoadSceneAsync("level4");
 			transform.position = new Vector3(1f,2f,1f);
 			setStartSpot();
 			resetPos();

@@ -2,30 +2,37 @@
 using System.Collections;
 
 public class lightScript : MonoBehaviour {
-	GameObject flashlight;
+	public GameObject[] flashlight;
 	float maxLightDist = .1f;
 	Color OGCol;
 	public SpriteRenderer spriteRenderer = null;
-	gameManager man;
+	lightPower lp;
 	public float dt;
 	// Use this for initialization
 	void Start () {
-		flashlight = GameObject.FindGameObjectWithTag("LightObj");
+		flashlight = GameObject.FindGameObjectsWithTag("LightObj");
 		if(!spriteRenderer) spriteRenderer = this.GetComponent<SpriteRenderer>();
 		OGCol = spriteRenderer.color;
-		man = GameObject.FindGameObjectWithTag("GameManager").GetComponent<gameManager>();
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
-		float distance = (1/Vector3.SqrMagnitude(transform.position-flashlight.transform.position)) + man.getPower();
-		dt = distance;
-		if(distance < maxLightDist) {
+		float distance = 0;
+		dt = 0;
+		for(int i = 0; i < flashlight.Length; i++){
+			if(flashlight[i]){
+				lp = flashlight[i].gameObject.GetComponent<lightPower>();
+				distance = (1/Vector3.SqrMagnitude(transform.position-flashlight[i].transform.position)) + lp.getPower();
+				if(distance > dt)dt = distance;
+			}
+		}
+		if(dt < maxLightDist) {
 			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,0);
 		}
 		else {
-			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,(distance));
+			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,(dt));
 		}
+
 	}
 }
