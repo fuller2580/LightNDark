@@ -102,6 +102,28 @@ public class PlayerController : MonoBehaviour {
 			resetPos();
 			loseLife();
 		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha1)){
+			ghosts.Clear();
+			SceneManager.LoadSceneAsync("Level1");
+			transform.position = new Vector3(-5.24f,-1.54f,1f);
+			setStartSpot();
+			resetPos();
+		}
+		else if(Input.GetKeyDown(KeyCode.Alpha2)){
+			ghosts.Clear();
+			SceneManager.LoadSceneAsync("level2");
+			transform.position = new Vector3(15f,6.65f,1);
+			setStartSpot();
+			resetPos();
+		}
+		else if(Input.GetKeyDown(KeyCode.Alpha5)){
+			ghosts.Clear();
+			SceneManager.LoadSceneAsync("level5");
+			transform.position = new Vector3(1f,2f,1f);
+			setStartSpot();
+			resetPos();
+		}
 	}
 
 
