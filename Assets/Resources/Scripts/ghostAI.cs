@@ -16,6 +16,7 @@ public class ghostAI : MonoBehaviour {
 		anim = this.gameObject.GetComponent<Animator>();
 		player.GetComponent<PlayerController>().ghosts.Add(this);
 		audio = this.gameObject.GetComponent<AudioSource>();
+		audio.volume = player.GetComponent<PlayerController>().getVolume();
 	}
 	
 	// Update is called once per frame

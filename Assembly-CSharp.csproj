@@ -56,6 +56,7 @@
      <Compile Include="Assets\Resources\Scripts\ghostAI.cs" />
      <Compile Include="Assets\Resources\Scripts\lightPower.cs" />
      <Compile Include="Assets\Resources\Scripts\lightScript.cs" />
+     <Compile Include="Assets\Resources\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\orbScript.cs" />
      <Compile Include="Assets\Resources\Scripts\shadowScript.cs" />
      <Compile Include="Assets\Resources\Scripts\spinSpin.cs" />
