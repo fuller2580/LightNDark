@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour {
 		//	cloudanim.Play("cloud");	
 
 		}
+			
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
@@ -68,6 +69,16 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadSceneAsync(LN);
 			//Application.LoadLevel("level2");
 			resetPos();
+		}
+
+		if(col.gameObject.tag == "movingPlat"){
+			this.transform.parent = col.transform;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D col){
+		if(col.gameObject.tag == "movingPlat"){
+			this.transform.parent = null;
 		}
 	}
 
