@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
 	public List<ghostAI> ghosts;
 	public List<Image> livesImg;
-
+	float volume = .5f;
 	public float fear = 0;
 	public Image fearBar;
 
@@ -213,5 +213,15 @@ public class PlayerController : MonoBehaviour {
 		Rigidbody2D rig = this.gameObject.GetComponent<Rigidbody2D>();
 		rig.velocity = Vector3.zero;
 		this.gameObject.transform.position = startSpot;
+	}
+	public void setGhostVolume(float vol){
+		volume = vol;
+		for(int i = 0; i < ghosts.Count; i++){
+			ghosts[i].GetComponent<AudioSource>().volume = vol;
+		}
+	}
+
+	public float getVolume(){
+		return volume;
 	}
 }
