@@ -69,16 +69,28 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadSceneAsync(LN);
 			//Application.LoadLevel("level2");
 			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 
 		if(col.gameObject.tag == "movingPlat"){
 			this.transform.parent = col.transform;
+		}
+		if(col.gameObject.tag == "stick"){
+			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+		}
+
+		if(col.gameObject.tag == "warp"){
+			this.transform.position = col.gameObject.GetComponent<warp>().getWarpSpot();
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D col){
 		if(col.gameObject.tag == "movingPlat"){
 			this.transform.parent = null;
+		}
+		if(col.gameObject.tag == "stick"){
+			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 		}
 	}
 
@@ -109,7 +121,7 @@ public class PlayerController : MonoBehaviour {
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 			//cloudanim.Play("cloud");
 		}
-		if(this.gameObject.transform.position.y < -20){
+		if(this.gameObject.transform.position.y < -60){
 			resetPos();
 			loseLife();
 		}
@@ -120,6 +132,7 @@ public class PlayerController : MonoBehaviour {
 			transform.position = new Vector3(-5.24f,-1.54f,1f);
 			setStartSpot();
 			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2)){
 			ghosts.Clear();
@@ -127,6 +140,7 @@ public class PlayerController : MonoBehaviour {
 			transform.position = new Vector3(15f,6.65f,1);
 			setStartSpot();
 			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha3)){
 			ghosts.Clear();
@@ -134,6 +148,7 @@ public class PlayerController : MonoBehaviour {
 			transform.position = new Vector3(13f,24f,1f);
 			setStartSpot();
 			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha4)){
 			ghosts.Clear();
@@ -141,6 +156,7 @@ public class PlayerController : MonoBehaviour {
 			transform.position = new Vector3(1f,2f,1f);
 			setStartSpot();
 			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 	}
 
