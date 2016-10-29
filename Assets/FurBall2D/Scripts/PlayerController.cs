@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.Alpha3)){
 			ghosts.Clear();
 			SceneManager.LoadSceneAsync("level3");
-			transform.position = new Vector3(-5.5f,2f,1f);
+			transform.position = new Vector3(13f,24f,1f);
 			setStartSpot();
 			resetPos();
 		}
