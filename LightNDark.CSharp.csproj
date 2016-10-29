@@ -84,6 +84,7 @@
     <Compile Include="Assets\Resources\Scripts\orbScript.cs" />
     <Compile Include="Assets\Resources\Scripts\shadowScript.cs" />
     <Compile Include="Assets\Resources\Scripts\spinSpin.cs" />
+    <Compile Include="Assets\Resources\Scripts\warp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
