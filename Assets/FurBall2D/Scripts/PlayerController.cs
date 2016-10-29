@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour {
 	public bool lookingRight = true;
 	bool doubleJump = false;
 	public GameObject Boost;
-	
+	bool needLights = false;
+	bool isLoading = false;
 	private Animator cloudanim;
 	public GameObject Cloud;
 
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 	public float fear = 0;
 	public Image fearBar;
 
+	AsyncOperation sync;
 	// Use this for initialization
 	void Start () {
 		if(ghosts == null){
@@ -66,7 +68,9 @@ public class PlayerController : MonoBehaviour {
 			transform.position = col.gameObject.transform.position;
 			setStartSpot();
 			string LN = col.gameObject.GetComponent<spinSpin>().levelName;
-			SceneManager.LoadSceneAsync(LN);
+			isLoading = true;
+			needLights = true;
+			sync = SceneManager.LoadSceneAsync(LN);
 			//Application.LoadLevel("level2");
 			resetPos();
 			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
@@ -157,6 +161,17 @@ public class PlayerController : MonoBehaviour {
 			setStartSpot();
 			resetPos();
 			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+		}
+
+		if(needLights){
+			if(!isLoading){
+				needLights = false;
+				StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			}
+		}
+
+		if(isLoading){
+			if(sync.isDone)isLoading = false;				
 		}
 	}
 
