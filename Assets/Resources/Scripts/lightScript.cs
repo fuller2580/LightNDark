@@ -26,7 +26,9 @@ public class lightScript : MonoBehaviour {
 		for(int i = 0; i < lights.Count; i++){
 			if(lights[i]){
 				lp = lights[i].gameObject.GetComponent<lightPower>();
-				distance = (1/Vector3.SqrMagnitude(transform.position-lights[i].transform.position)) + lp.getPower();
+				Vector2 mypos = new Vector2(transform.position.x,transform.position.y);
+				Vector2 lightpos = new Vector2(lights[i].transform.position.x,lights[i].transform.position.y);
+				distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getPower();
 				if(distance > dt)dt = distance;
 			}
 		}
@@ -43,7 +45,7 @@ public class lightScript : MonoBehaviour {
 		lights.Clear();
 		yield return new WaitForSeconds(1);
 		GameObject[] AllLights = GameObject.FindGameObjectsWithTag("LightObj");
-		print("Found "+AllLights.Length+" lights");
+		//print("Found "+AllLights.Length+" lights");
 		for(int i = 0; i < AllLights.Length; i++){
 			lights.Add(AllLights[i]);
 		}
