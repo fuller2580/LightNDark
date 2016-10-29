@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour {
 	float volume = .5f;
 	public float fear = 0;
 	public Image fearBar;
+	public GameObject loadingScreen;
 
 	AsyncOperation sync;
 	// Use this for initialization
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour {
 			string LN = col.gameObject.GetComponent<spinSpin>().levelName;
 			isLoading = true;
 			needLights = true;
+			loadingScreen.SetActive(true);
 			sync = SceneManager.LoadSceneAsync(LN);
 			//Application.LoadLevel("level2");
 			resetPos();
@@ -81,6 +83,9 @@ public class PlayerController : MonoBehaviour {
 		}
 		if(col.gameObject.tag == "stick"){
 			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+		}
+		if(col.gameObject.tag == "stickVert"){
+			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
 		}
 
 		if(col.gameObject.tag == "warp"){
@@ -94,6 +99,9 @@ public class PlayerController : MonoBehaviour {
 		}
 		if(col.gameObject.tag == "stick"){
 			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+		}
+		if(col.gameObject.tag == "stickVert"){
 			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 		}
 	}
@@ -167,6 +175,7 @@ public class PlayerController : MonoBehaviour {
 			if(!isLoading){
 				needLights = false;
 				StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+				loadingScreen.SetActive(false);
 			}
 		}
 
