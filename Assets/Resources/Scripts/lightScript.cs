@@ -30,7 +30,7 @@ public class lightScript : MonoBehaviour {
 				Vector2 mypos = new Vector2(transform.position.x,transform.position.y);
 				Vector2 lightpos = new Vector2(lights[i].transform.position.x,lights[i].transform.position.y);
 				distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getRadius();
-				if(distance > dt){
+				if(distance > maxLightDist && (distance + lp.getPower()) > (dt + pow)){
 					pow = lp.getPower();
 					dt = distance;
 				}
@@ -40,7 +40,9 @@ public class lightScript : MonoBehaviour {
 			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,0);
 		}
 		else {
-			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,(dt+pow));
+			float tempdt = dt;
+			if(tempdt > 1) tempdt = 1;
+			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,((1+pow)*(tempdt+pow)));
 		}
 
 	}
