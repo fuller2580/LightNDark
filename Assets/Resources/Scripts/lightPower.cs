@@ -27,7 +27,7 @@ public class lightPower : MonoBehaviour {
 		//print(Radius);
 	}
 	public float getPower(){
-		return Radius;
+		return Power;
 	}
 	public void setPower(float lp){
 		Power = lp;
