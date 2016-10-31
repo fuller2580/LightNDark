@@ -23,20 +23,24 @@ public class lightScript : MonoBehaviour {
 	void Update () {
 		float distance = 0;
 		dt = 0;
+		float pow = 0;
 		for(int i = 0; i < lights.Count; i++){
 			if(lights[i]){
 				lp = lights[i].gameObject.GetComponent<lightPower>();
 				Vector2 mypos = new Vector2(transform.position.x,transform.position.y);
 				Vector2 lightpos = new Vector2(lights[i].transform.position.x,lights[i].transform.position.y);
-				distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getPower();
-				if(distance > dt)dt = distance;
+				distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getRadius();
+				if(distance > dt){
+					pow = lp.getPower();
+					dt = distance;
+				}
 			}
 		}
 		if(dt < maxLightDist) {
 			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,0);
 		}
 		else {
-			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,(dt));
+			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,(dt+pow));
 		}
 
 	}
