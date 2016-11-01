@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ghostAI : MonoBehaviour {
 	GameObject player;
-	public float speed;
+	float speed;
 	SpriteRenderer SR;
 	[HideInInspector] public Animator anim;
 	[HideInInspector] public float distance;
@@ -23,7 +23,7 @@ public class ghostAI : MonoBehaviour {
 	void Update () {
 		distance = Vector3.Distance(player.transform.position,this.transform.position);
 		//print(distance);
-		if(distance < 20){
+		if(distance < 12){
 			moveToPlayer();
 			if(distance < 3 && !anim.GetBool("dead")){
 				if(!audio.isPlaying)audio.Play();
