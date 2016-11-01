@@ -170,6 +170,14 @@ public class PlayerController : MonoBehaviour {
 			resetPos();
 			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
+		else if(Input.GetKeyDown(KeyCode.Alpha5)){
+			ghosts.Clear();
+			SceneManager.LoadSceneAsync("level5");
+			transform.position = new Vector3(-15.5f,0f,1f);
+			setStartSpot();
+			resetPos();
+			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+		}
 
 		if(needLights){
 			if(!isLoading){
