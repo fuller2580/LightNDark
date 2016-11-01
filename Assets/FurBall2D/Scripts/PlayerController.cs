@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 	bool isLoading = false;
 	private Animator cloudanim;
 	public GameObject Cloud;
+	GameObject[] tilesMang;
+
 
 	int lives = 3;
 
@@ -178,6 +180,12 @@ public class PlayerController : MonoBehaviour {
 			resetPos();
 			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
+		else if(Input.GetKeyDown(KeyCode.L)){
+			lvl3TilesOn();
+		}
+		else if(Input.GetKeyDown(KeyCode.P)){
+			lvl3TilesOff();
+		}
 
 		if(needLights){
 			if(!isLoading){
@@ -244,7 +252,18 @@ public class PlayerController : MonoBehaviour {
 	void endGame(){
 		print("eventually will go to lose screen");
 	}
-	
+	void lvl3TilesOff(){
+		tilesMang = GameObject.FindGameObjectsWithTag("testShiz");
+		for(int i = 0; i < tilesMang.Length; i++){
+			tilesMang[i].SetActive(false);
+		}
+	}
+	void lvl3TilesOn(){
+		for(int i = 0; i < tilesMang.Length; i++){
+			tilesMang[i].SetActive(true);
+		}
+	}
+
 	public void Flip()
 	{
 		lookingRight = !lookingRight;

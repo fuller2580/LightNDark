@@ -15,7 +15,7 @@ public class slammyBlock : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		TargetB = transform.position;
+		TargetB = transform.localPosition;
 		if(TargetA){
 			canMove = true;
 		}
@@ -26,11 +26,11 @@ public class slammyBlock : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(canMove && activate){
-			if(goToA)transform.position = Vector3.MoveTowards(transform.position, TargetA.transform.position, (Time.deltaTime * dropSpeed));
-			else transform.position = Vector3.MoveTowards(transform.position, TargetB, (Time.deltaTime * returnSpeed));
+			if(goToA)transform.localPosition = Vector3.MoveTowards(transform.localPosition, TargetA.transform.localPosition, (Time.deltaTime * dropSpeed));
+			else transform.localPosition = Vector3.MoveTowards(transform.localPosition, TargetB, (Time.deltaTime * returnSpeed));
 
-			if(transform.position == TargetA.transform.position && goToA) StartCoroutine(startToB());
-			else if(transform.position == TargetB && !goToA) StartCoroutine(startToA());
+			if(transform.localPosition == TargetA.transform.localPosition && goToA) StartCoroutine(startToB());
+			else if(transform.localPosition == TargetB && !goToA) StartCoroutine(startToA());
 		}
 		else{
 			if(spriteRenderer.color.a >= 0.1f) activate = true;
