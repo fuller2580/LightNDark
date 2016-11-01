@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: 194a1655165f9fb4b953fea41c567aa5
+timeCreated: 1477972655
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Anglerfish_0
+    21300002: Anglerfish_1
+    21300004: Anglerfish_2
+    21300006: Anglerfish_3
+    21300008: Anglerfish_4
+    21300010: Anglerfish_5
+    21300012: Anglerfish_6
+    21300014: Anglerfish_7
+    21300016: Anglerfish_8
+    21300018: Anglerfish_9
+    21300020: Anglerfish_10
+    21300022: Anglerfish_11
+    21300024: Anglerfish_12
+    21300026: Anglerfish_13
+    21300028: Anglerfish_14
+    21300030: Anglerfish_15
+    21300032: Anglerfish_16
+    21300034: Anglerfish_17
+    21300036: Anglerfish_18
+    21300038: Anglerfish_19
+    21300040: Anglerfish_20
+    21300042: Anglerfish_21
+    21300044: Anglerfish_22
+    21300046: Anglerfish_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Anglerfish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 180
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_9
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_11
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 120
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_16
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 60
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_21
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    - name: Anglerfish_23
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 30}
+        - {x: -41, y: -30}
+        - {x: 41, y: -30}
+        - {x: 41, y: 30}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

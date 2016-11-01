@@ -29,7 +29,8 @@ public class lightScript : MonoBehaviour {
 				lp = lights[i].gameObject.GetComponent<lightPower>();
 				Vector2 mypos = new Vector2(transform.position.x,transform.position.y);
 				Vector2 lightpos = new Vector2(lights[i].transform.position.x,lights[i].transform.position.y);
-				distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getRadius();
+				if(lp.getRadius() != 6) distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getRadius();
+				else distance = 0;
 				if(distance > maxLightDist && (distance + lp.getPower()) > (dt + pow)){
 					pow = lp.getPower();
 					dt = distance;
