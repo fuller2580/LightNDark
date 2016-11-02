@@ -9,6 +9,7 @@ public class movingPlatform : MonoBehaviour {
 	public float speed = 1f;
 	public float pauseTime = 0.0f;
 	bool canMove = false;
+	public bool oneShot = false;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,7 @@ public class movingPlatform : MonoBehaviour {
 			canMove = true;
 		}
 		else print("missing Target GameObject for a moving platform");
+		if(oneShot)canMove = false;
 	}
 	
 	// Update is called once per frame
@@ -29,8 +31,14 @@ public class movingPlatform : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter2D(Collider2D col){
+		if(col.gameObject.tag == "Player"){
+			if(oneShot)canMove = true;
+		}
+	}
+
 	IEnumerator startToA(){
-		if(!working){
+		if(!working && !oneShot){
 			working = true;
 			yield return new WaitForSeconds(pauseTime);
 			goToA = true;

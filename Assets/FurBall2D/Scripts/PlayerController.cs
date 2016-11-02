@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour {
 	bool isLoading = false;
 	private Animator cloudanim;
 	public GameObject Cloud;
-	GameObject[] tilesMang;
-
 
 	int lives = 3;
 
@@ -92,6 +90,10 @@ public class PlayerController : MonoBehaviour {
 
 		if(col.gameObject.tag == "warp"){
 			this.transform.position = col.gameObject.GetComponent<warp>().getWarpSpot();
+		}
+		if(col.gameObject.tag == "tileTrigger"){
+			if(col.gameObject.GetComponent<tileName>().tileOn != "")tilesOn(col.gameObject.GetComponent<tileName>().tileOn);
+			if(col.gameObject.GetComponent<tileName>().tileOff != "")tilesOff(col.gameObject.GetComponent<tileName>().tileOff);
 		}
 	}
 
@@ -181,10 +183,10 @@ public class PlayerController : MonoBehaviour {
 			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
 		}
 		else if(Input.GetKeyDown(KeyCode.L)){
-			lvl3TilesOn();
+		//	lvl3TilesOn();
 		}
 		else if(Input.GetKeyDown(KeyCode.P)){
-			lvl3TilesOff();
+		//	lvl3TilesOff();
 		}
 
 		if(needLights){
@@ -225,9 +227,12 @@ public class PlayerController : MonoBehaviour {
 
 		if(ghosts.Count > 0){
 			for(int i = 0; i < ghosts.Count; i++){
+				if(ghosts[i]){
 				if(ghosts[i].distance < 3 && !ghosts[i].anim.GetBool("dead")){
 					fear += Time.deltaTime;
 				}
+				}
+				else ghosts.RemoveAt(i);
 			}
 		}
 		fear -= Time.deltaTime*.1f;
@@ -252,15 +257,18 @@ public class PlayerController : MonoBehaviour {
 	void endGame(){
 		print("eventually will go to lose screen");
 	}
-	void lvl3TilesOff(){
-		tilesMang = GameObject.FindGameObjectsWithTag("testShiz");
+	void tilesOff(string tag){
+		GameObject[] tilesMang;
+		tilesMang = GameObject.FindGameObjectsWithTag(tag);
 		for(int i = 0; i < tilesMang.Length; i++){
-			tilesMang[i].SetActive(false);
+			if(tilesMang[i].GetComponent<lightScript>())tilesMang[i].GetComponent<lightScript>().enabled = false;
 		}
 	}
-	void lvl3TilesOn(){
+	void tilesOn(string tag){
+		GameObject[] tilesMang;
+		tilesMang = GameObject.FindGameObjectsWithTag(tag);
 		for(int i = 0; i < tilesMang.Length; i++){
-			tilesMang[i].SetActive(true);
+			if(tilesMang[i].GetComponent<lightScript>())tilesMang[i].GetComponent<lightScript>().enabled = true;
 		}
 	}
 

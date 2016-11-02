@@ -36,6 +36,9 @@ public class lightScript : MonoBehaviour {
 					dt = distance;
 				}
 			}
+			else{
+				lights.RemoveAt(i);
+			}
 		}
 		if(dt < maxLightDist) {
 			spriteRenderer.color = new Vector4(OGCol.r,OGCol.g,OGCol.b,0);
