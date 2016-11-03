@@ -14,10 +14,14 @@ public class movingPlatform : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(TargetA && TargetB){
-			canMove = true;
+			if(!oneShot)canMove = true;
+			else {
+				//print(TargetA.transform.position);
+				//print(TargetA.transform.position);
+			}
 		}
 		else print("missing Target GameObject for a moving platform");
-		if(oneShot)canMove = false;
+
 	}
 	
 	// Update is called once per frame

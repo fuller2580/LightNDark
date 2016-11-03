@@ -3,7 +3,7 @@ using System.Collections;
 
 public class gameManager : MonoBehaviour {
 	float lightPower = 0;
-
+	public GameObject player;
 	// Use this for initialization
 	void Start () {
 		DontDestroyOnLoad(this.gameObject);
@@ -20,6 +20,20 @@ public class gameManager : MonoBehaviour {
 	public void setPower(float lp){
 		lightPower = lp;
 		print(lightPower);
+	}
+
+	public void startGame(){
+		spawnPlayer();
+		startLevel("level1");
+	}
+
+	void spawnPlayer(){
+		if(player != null)player.SetActive(true);
+		else print("player object missing on Game Manager");
+	}
+
+	void startLevel(string level){
+		player.GetComponent<PlayerController>().loadLevel(level);
 	}
 
 }

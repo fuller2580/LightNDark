@@ -6,17 +6,25 @@ public class lightPower : MonoBehaviour {
 	public float Power = 0;
 	public bool isMainLight = false;
 	gameManager man;
-	lightScript player;
+	GameObject player;
+	bool oneStart = false;
 	// Use this for initialization
 	void Start () {
-		if(isMainLight)DontDestroyOnLoad(this.gameObject);
-		player = GameObject.FindGameObjectWithTag("Player").GetComponent<lightScript>();
-		player.lights.Add(this.gameObject);
-		man = GameObject.FindGameObjectWithTag("GameManager").GetComponent<gameManager>();
+		if(isMainLight){
+			DontDestroyOnLoad(this.gameObject);
+			man = GameObject.FindGameObjectWithTag("GameManager").GetComponent<gameManager>();
+		}
+		player = GameObject.FindGameObjectWithTag("Player");
+		if(player != null) startInfo();
+
 	}
 
 	// Update is called once per frame
 	void Update () {
+		if(!oneStart){
+			player = GameObject.FindGameObjectWithTag("Player");
+			if(player != null) startInfo();
+		}
 		if(isMainLight) Radius = man.getPower();
 	}
 	public float getRadius(){
@@ -32,5 +40,10 @@ public class lightPower : MonoBehaviour {
 	public void setPower(float lp){
 		Power = lp;
 		//print(Radius);
+	}
+
+	void startInfo(){
+		oneStart = true;
+		player.GetComponent<lightScript>().lights.Add(this.gameObject);
 	}
 }

@@ -59,7 +59,9 @@
      <Compile Include="Assets\Resources\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\orbScript.cs" />
      <Compile Include="Assets\Resources\Scripts\shadowScript.cs" />
+     <Compile Include="Assets\Resources\Scripts\slammyBlock.cs" />
      <Compile Include="Assets\Resources\Scripts\spinSpin.cs" />
+     <Compile Include="Assets\Resources\Scripts\tileName.cs" />
      <Compile Include="Assets\Resources\Scripts\warp.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />

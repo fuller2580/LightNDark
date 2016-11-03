@@ -65,17 +65,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 
 		if(col.gameObject.tag == "portal"){
-			ghosts.Clear();
-			transform.position = col.gameObject.transform.position;
-			setStartSpot();
-			string LN = col.gameObject.GetComponent<spinSpin>().levelName;
-			isLoading = true;
-			needLights = true;
-			loadingScreen.SetActive(true);
-			sync = SceneManager.LoadSceneAsync(LN);
-			//Application.LoadLevel("level2");
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel(col.gameObject.GetComponent<spinSpin>().levelName);
 		}
 
 		if(col.gameObject.tag == "movingPlat"){
@@ -143,44 +133,19 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
-			ghosts.Clear();
-			SceneManager.LoadSceneAsync("Level1");
-			transform.position = new Vector3(-5.24f,-1.54f,1f);
-			setStartSpot();
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel("level1");
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2)){
-			ghosts.Clear();
-			SceneManager.LoadSceneAsync("level2");
-			transform.position = new Vector3(15f,6.65f,1);
-			setStartSpot();
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel("level2");
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha3)){
-			ghosts.Clear();
-			SceneManager.LoadSceneAsync("level3");
-			transform.position = new Vector3(13f,24f,1f);
-			setStartSpot();
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel("level3");
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha4)){
-			ghosts.Clear();
-			SceneManager.LoadSceneAsync("level4");
-			transform.position = new Vector3(1f,2f,1f);
-			setStartSpot();
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel("level4");
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha5)){
-			ghosts.Clear();
-			SceneManager.LoadSceneAsync("level5");
-			transform.position = new Vector3(-15.5f,0f,1f);
-			setStartSpot();
-			resetPos();
-			StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+			loadLevel("level5");
 		}
 		else if(Input.GetKeyDown(KeyCode.L)){
 		//	lvl3TilesOn();
@@ -272,6 +237,56 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	public void loadLevel(string level){
+		ghosts.Clear();
+		transform.position = getLevelPosition(level);
+		setStartSpot();
+		isLoading = true;
+		needLights = true;
+		loadingScreen.SetActive(true);
+		sync = SceneManager.LoadSceneAsync(level);
+		//Application.LoadLevel("level2");
+		resetPos();
+		StartCoroutine(this.gameObject.GetComponent<lightScript>().findLights());
+	}
+
+	Vector3 getLevelPosition(string level){
+		switch(level){
+		case "level1":
+			return new Vector3(-5.24f,-1.54f,1f);
+			break;
+		case "level2":
+			return new Vector3(15f,6.65f,1);
+			break;
+		case "level3":
+			return new Vector3(13f,24f,1f);
+			break;
+		case "level4":
+			return new Vector3(1f,2f,1f);
+			break;
+		case "level5":
+			return new Vector3(-15.5f,0f,1f);
+			break;
+		case "level6":
+			return new Vector3(-40f,85f,1);
+			break;
+		case "level7":
+			return new Vector3(15f,6.65f,1);
+			break;
+		case "level8":
+			return new Vector3(15f,6.65f,1);
+			break;
+		case "level9":
+			return new Vector3(15f,6.65f,1);
+			break;
+		case "level10":
+			return new Vector3(15f,6.65f,1);
+			break;
+		default:
+			return Vector3.zero;
+			break;
+		}
+	}
 	public void Flip()
 	{
 		lookingRight = !lookingRight;
