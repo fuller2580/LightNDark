@@ -28,7 +28,10 @@ public class gameManager : MonoBehaviour {
 	}
 
 	void spawnPlayer(){
-		if(player != null)player.SetActive(true);
+		if(player != null){
+			player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+			player.GetComponentInChildren<Camera>().enabled = true;
+		}
 		else print("player object missing on Game Manager");
 	}
 
