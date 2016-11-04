@@ -4,8 +4,11 @@
     <Files>
       <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="222" Column="16" />
       <File FileName="Assets\Resources\Scripts\ghostAI.cs" Line="1" Column="1" />
+      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="161" Column="21" />
       <File FileName="Assets\Resources\Scripts\lightScript.cs" Line="20" Column="3" />
-      <File FileName="Assets\Resources\Scripts\lightPower.cs" Line="25" Column="14" />
+      <File FileName="Assets\Resources\Scripts\lightPower.cs" Line="18" Column="34" />
+      <File FileName="Assets\Resources\Scripts\gameManager.cs" Line="13" Column="24" />
+      <File FileName="Assets\Resources\Scripts\breakBlock.cs" Line="16" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

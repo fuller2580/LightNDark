@@ -29,8 +29,9 @@ public class PlayerController : MonoBehaviour {
 	public shadowScript ss;
 	Vector3 startSpot;
 
-	public List<ghostAI> ghosts;
+	[HideInInspector]public List<ghostAI> ghosts;
 	public List<Image> livesImg;
+	[HideInInspector]public List<GameObject> breakBlocks;
 	float volume = .5f;
 	public float fear = 0;
 	public Image fearBar;
@@ -41,6 +42,9 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		if(ghosts == null){
 			ghosts = new List<ghostAI>();
+		}
+		if(breakBlocks == null){
+			breakBlocks = new List<GameObject>();
 		}
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -130,6 +134,12 @@ public class PlayerController : MonoBehaviour {
 		if(this.gameObject.transform.position.y < -60){
 			resetPos();
 			loseLife();
+			if(breakBlocks.Count > 0){
+				for(int i = 0; i < breakBlocks.Count; i++){
+					breakBlocks[i].GetComponent<breakBlock>().turnOn();
+				}
+				breakBlocks.Clear();
+			}
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
@@ -146,6 +156,9 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha5)){
 			loadLevel("level5");
+		}
+		else if(Input.GetKeyDown(KeyCode.Alpha6)){
+			loadLevel("level6");
 		}
 		else if(Input.GetKeyDown(KeyCode.L)){
 		//	lvl3TilesOn();
@@ -239,6 +252,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void loadLevel(string level){
 		ghosts.Clear();
+		breakBlocks.Clear();
 		transform.position = getLevelPosition(level);
 		setStartSpot();
 		isLoading = true;
@@ -268,7 +282,7 @@ public class PlayerController : MonoBehaviour {
 			return new Vector3(-15.5f,0f,1f);
 			break;
 		case "level6":
-			return new Vector3(-40f,85f,1);
+			return new Vector3(0f,1f,1);
 			break;
 		case "level7":
 			return new Vector3(15f,6.65f,1);

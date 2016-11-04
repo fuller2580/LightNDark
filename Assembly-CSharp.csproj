@@ -50,6 +50,7 @@
      <Compile Include="Assets\FurBall2D\Scripts\HitVelDetection.cs" />
      <Compile Include="Assets\FurBall2D\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Resources\Scripts\ParticleSpiralEffect.cs" />
+     <Compile Include="Assets\Resources\Scripts\breakBlock.cs" />
      <Compile Include="Assets\Resources\Scripts\dontDestroy.cs" />
      <Compile Include="Assets\Resources\Scripts\followMouse.cs" />
      <Compile Include="Assets\Resources\Scripts\gameManager.cs" />
