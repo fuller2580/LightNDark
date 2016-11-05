@@ -11,7 +11,7 @@ public class lightPower : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(isMainLight){
-			DontDestroyOnLoad(this.gameObject);
+			//DontDestroyOnLoad(this.gameObject);
 			man = GameObject.FindGameObjectWithTag("GameManager").GetComponent<gameManager>();
 		}
 		player = GameObject.FindGameObjectWithTag("Player");

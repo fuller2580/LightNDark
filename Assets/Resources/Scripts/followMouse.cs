@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class followMouse : MonoBehaviour {
-	Camera cam;
+	public Camera cam;
 	// Use this for initialization
 	void Start () {
-		cam = Camera.main;
+		if(cam == null)cam = Camera.main;
 		DontDestroyOnLoad(this.gameObject);
 	}
 	
