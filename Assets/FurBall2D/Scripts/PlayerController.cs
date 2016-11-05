@@ -268,37 +268,26 @@ public class PlayerController : MonoBehaviour {
 		switch(level){
 		case "level1":
 			return new Vector3(-5.24f,-1.54f,1f);
-			break;
 		case "level2":
 			return new Vector3(15f,6.65f,1);
-			break;
 		case "level3":
 			return new Vector3(13f,24f,1f);
-			break;
 		case "level4":
 			return new Vector3(1f,2f,1f);
-			break;
 		case "level5":
 			return new Vector3(-15.5f,0f,1f);
-			break;
 		case "level6":
 			return new Vector3(0f,1f,1);
-			break;
 		case "level7":
 			return new Vector3(15f,6.65f,1);
-			break;
 		case "level8":
 			return new Vector3(15f,6.65f,1);
-			break;
 		case "level9":
 			return new Vector3(15f,6.65f,1);
-			break;
 		case "level10":
 			return new Vector3(15f,6.65f,1);
-			break;
 		default:
 			return Vector3.zero;
-			break;
 		}
 	}
 	public void Flip()

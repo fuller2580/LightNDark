@@ -5,7 +5,6 @@ public class breakBlock : MonoBehaviour {
 	bool needOn = false;
 	bool working = false;
 	bool isOff = false;
-	bool oneStart = false;
 	// Use this for initialization
 	void Start () {
 	}
