@@ -52,6 +52,7 @@
      <Compile Include="Assets\Resources\Scripts\ParticleSpiralEffect.cs" />
      <Compile Include="Assets\Resources\Scripts\breakBlock.cs" />
      <Compile Include="Assets\Resources\Scripts\dontDestroy.cs" />
+     <Compile Include="Assets\Resources\Scripts\fishy.cs" />
      <Compile Include="Assets\Resources\Scripts\followMouse.cs" />
      <Compile Include="Assets\Resources\Scripts\gameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\ghostAI.cs" />
