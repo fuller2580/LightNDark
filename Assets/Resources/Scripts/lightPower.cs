@@ -5,9 +5,11 @@ public class lightPower : MonoBehaviour {
 	public float Radius = 0;
 	public float Power = 0;
 	public bool isMainLight = false;
+	Vector2 holdVals;
 	gameManager man;
 	GameObject player;
 	bool oneStart = false;
+	[HideInInspector]public bool hitOnce = false;
 	// Use this for initialization
 	void Start () {
 		if(isMainLight){
@@ -45,5 +47,22 @@ public class lightPower : MonoBehaviour {
 	void startInfo(){
 		oneStart = true;
 		player.GetComponent<lightScript>().lights.Add(this.gameObject);
+	}
+
+	public void fishEffect(){
+		if(!hitOnce){
+			hitOnce = true;
+			holdVals = new Vector2(Radius,Power);
+			setPower(0);
+			man.setPower(0);
+			StartCoroutine(endFishEffect());
+		}
+	}
+
+	IEnumerator endFishEffect(){
+		yield return new WaitForSeconds(10);
+		setPower(holdVals.y);
+		man.setPower(holdVals.x);
+		hitOnce = false;
 	}
 }

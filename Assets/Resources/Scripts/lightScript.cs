@@ -31,7 +31,7 @@ public class lightScript : MonoBehaviour {
 				Vector2 lightpos = new Vector2(lights[i].transform.position.x,lights[i].transform.position.y);
 				if(lp.getRadius() != 6) distance = (1/Vector2.SqrMagnitude(mypos-lightpos)) + lp.getRadius();
 				else distance = 0;
-				if(distance > maxLightDist && (distance + lp.getPower()) > (dt + pow)){
+				if(!lp.hitOnce && distance > maxLightDist && (distance + lp.getPower()) > (dt + pow)){
 					pow = lp.getPower();
 					dt = distance;
 				}

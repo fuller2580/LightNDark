@@ -19,7 +19,7 @@ public class gameManager : MonoBehaviour {
 	}
 	public void setPower(float lp){
 		lightPower = lp;
-		print(lightPower);
+	//	print(lightPower);
 	}
 
 	public void startGame(){
