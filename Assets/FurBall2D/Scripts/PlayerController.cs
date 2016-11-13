@@ -20,13 +20,16 @@ public class PlayerController : MonoBehaviour {
 	bool isLoading = false;
 	private Animator cloudanim;
 	public GameObject Cloud;
+	bool isSticking = false;
 
 	int lives = 3;
+	int ammo = 0;
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
 	private bool isGrounded = false;
 	public shadowScript ss;
+	public SpriteRenderer sr;
 	Vector3 startSpot;
 
 	[HideInInspector]public List<ghostAI> ghosts;
@@ -36,6 +39,11 @@ public class PlayerController : MonoBehaviour {
 	public float fear = 0;
 	public Image fearBar;
 	public GameObject loadingScreen;
+
+	int element = 0;
+	public GameObject fireball;
+	public GameObject waterball;
+	public GameObject slimeball;
 
 	AsyncOperation sync;
 	// Use this for initialization
@@ -76,7 +84,9 @@ public class PlayerController : MonoBehaviour {
 			this.transform.parent = col.transform;
 		}
 		if(col.gameObject.tag == "stick"){
-			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+			isSticking = true;
+			this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
+			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
 		}
 		if(col.gameObject.tag == "stickVert"){
 			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
@@ -89,6 +99,24 @@ public class PlayerController : MonoBehaviour {
 			if(col.gameObject.GetComponent<tileName>().tileOn != "")tilesOn(col.gameObject.GetComponent<tileName>().tileOn);
 			if(col.gameObject.GetComponent<tileName>().tileOff != "")tilesOff(col.gameObject.GetComponent<tileName>().tileOff);
 		}
+		if(col.gameObject.tag == "toxic"){
+			element = 3;
+			ammo = 3;
+			Vector4 curCol = sr.color;
+			sr.color = new Vector4(0,1,0,curCol.w);
+		}
+		if(col.gameObject.tag == "water"){
+			element = 2;
+			ammo = 3;
+			Vector4 curCol = sr.color;
+			sr.color = new Vector4(0,0,1,curCol.w);
+		}
+		if(col.gameObject.tag == "lava"){
+			element = 1;
+			ammo = 3;
+			Vector4 curCol = sr.color;
+			sr.color = new Vector4(1,0,0,curCol.w);
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D col){
@@ -96,8 +124,7 @@ public class PlayerController : MonoBehaviour {
 			this.transform.parent = null;
 		}
 		if(col.gameObject.tag == "stick"){
-			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+			unStick();
 		}
 		if(col.gameObject.tag == "stickVert"){
 			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -112,6 +139,11 @@ public class PlayerController : MonoBehaviour {
 		else if(fear < 0) fear = 0;
 		fearBar.fillAmount = fear/100;
 		ss.isGrounded = isGrounded;
+
+		if(Input.GetMouseButtonDown(0) && element != 0 && ammo != 0){
+			shoot(element);
+		}
+
 	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
 		{
 			rb2d.AddForce(new Vector2(0,jumpForce));
@@ -125,12 +157,12 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-	if (Input.GetButtonDown("Vertical") && !isGrounded)
-		{
-			rb2d.AddForce(new Vector2(0,-jumpForce));
-			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
+	//if (Input.GetButtonDown("Vertical") && !isGrounded)
+		//{
+			//rb2d.AddForce(new Vector2(0,-jumpForce));
+			//Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 			//cloudanim.Play("cloud");
-		}
+		//}
 		if(this.gameObject.transform.position.y < -60){
 			resetPos();
 			loseLife();
@@ -188,10 +220,12 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		float hor = Input.GetAxis ("Horizontal");
+		float ver = Input.GetAxis("Vertical");
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor/2));
 
-		rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
+		if(!isSticking)rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
+		else rb2d.velocity = new Vector2 (hor * maxSpeed, ver * maxSpeed);
 		  
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
@@ -214,6 +248,53 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 		fear -= Time.deltaTime*.1f;
+	}
+
+	void shoot(int el){
+		ammo --;
+		Vector4 curCol = sr.color;
+		switch(el){
+		case 1:
+			Instantiate(fireball, this.transform.position, Quaternion.identity);
+			switch(ammo){
+				case 2:
+					sr.color = new Vector4(1f,.25f,.25f,curCol.w);
+					break;
+				case 1:
+					sr.color = new Vector4(1f,.5f,.5f,curCol.w);
+					break;
+				default:
+					break;
+			}
+			break;
+		case 2:
+			Instantiate(waterball, this.transform.position, Quaternion.identity);
+			switch(ammo){
+				case 2:
+					sr.color = new Vector4(.25f,.25f,1f,curCol.w);
+					break;
+				case 1:
+					sr.color = new Vector4(.5f,.5f,1f,curCol.w);
+					break;
+				default:
+					break;
+			}
+			break;
+		case 3:
+			Instantiate(slimeball, this.transform.position, Quaternion.identity);
+			switch(ammo){
+				case 2:
+					sr.color = new Vector4(.25f,1f,.25f,curCol.w);
+					break;
+				case 1:
+					sr.color = new Vector4(.5f,1f,.5f,curCol.w);
+					break;
+				default:
+					break;
+			}
+			break;
+		}
+		if(ammo == 0) sr.color = new Vector4(1f,1f,1f,curCol.w);
 	}
 
 	void loseLife(){
@@ -290,8 +371,7 @@ public class PlayerController : MonoBehaviour {
 			return Vector3.zero;
 		}
 	}
-	public void Flip()
-	{
+	public void Flip(){
 		lookingRight = !lookingRight;
 		Vector3 myScale = transform.localScale;
 		myScale.x *= -1;
@@ -312,6 +392,13 @@ public class PlayerController : MonoBehaviour {
 		for(int i = 0; i < ghosts.Count; i++){
 			ghosts[i].GetComponent<AudioSource>().volume = vol;
 		}
+	}
+
+	public void unStick(){
+		isSticking = false;
+		this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 6.1f;
+		//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+		//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
 	public float getVolume(){

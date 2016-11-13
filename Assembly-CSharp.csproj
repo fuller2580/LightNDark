@@ -51,6 +51,7 @@
      <Compile Include="Assets\FurBall2D\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Resources\Scripts\ParticleSpiralEffect.cs" />
      <Compile Include="Assets\Resources\Scripts\breakBlock.cs" />
+     <Compile Include="Assets\Resources\Scripts\delete.cs" />
      <Compile Include="Assets\Resources\Scripts\dontDestroy.cs" />
      <Compile Include="Assets\Resources\Scripts\fishy.cs" />
      <Compile Include="Assets\Resources\Scripts\followMouse.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Resources\Scripts\lightScript.cs" />
      <Compile Include="Assets\Resources\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\orbScript.cs" />
+     <Compile Include="Assets\Resources\Scripts\projectile.cs" />
      <Compile Include="Assets\Resources\Scripts\shadowScript.cs" />
      <Compile Include="Assets\Resources\Scripts\slammyBlock.cs" />
      <Compile Include="Assets\Resources\Scripts\spinSpin.cs" />

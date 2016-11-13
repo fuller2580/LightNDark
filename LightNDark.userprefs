@@ -1,14 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\fishy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FurBall2D\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="298" Column="34" />
+      <File FileName="Assets\Resources\Scripts\gameManager.cs" Line="27" Column="23" />
+      <File FileName="Assets\FurBall2D\Scripts\PlayerController.cs" Line="401" Column="101" />
       <File FileName="Assets\Resources\Scripts\ghostAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\lightScript.cs" Line="54" Column="2" />
+      <File FileName="Assets\Resources\Scripts\lightScript.cs" Line="24" Column="32" />
       <File FileName="Assets\Resources\Scripts\lightPower.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\gameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\breakBlock.cs" Line="32" Column="3" />
-      <File FileName="Assets\Resources\Scripts\fishy.cs" Line="24" Column="120" />
+      <File FileName="Assets\Resources\Scripts\breakBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\fishy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\projectile.cs" Line="22" Column="37" />
+      <File FileName="Assets\Resources\Scripts\followMouse.cs" Line="16" Column="3" />
+      <File FileName="Assets\Resources\Scripts\delete.cs" Line="39" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

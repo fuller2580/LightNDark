@@ -24,7 +24,7 @@ public class gameManager : MonoBehaviour {
 
 	public void startGame(){
 		spawnPlayer();
-		startLevel("level1");
+		startLevel("levelTut");
 	}
 
 	void spawnPlayer(){

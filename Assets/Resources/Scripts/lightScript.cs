@@ -15,12 +15,13 @@ public class lightScript : MonoBehaviour {
 		lights = new List<GameObject>();
 		StartCoroutine(findLights());
 		if(!spriteRenderer) spriteRenderer = this.GetComponent<SpriteRenderer>();
-		OGCol = spriteRenderer.color;
+
 
 	}
 
 	// Update is called once per frame
 	void Update () {
+		OGCol = spriteRenderer.color;
 		float distance = 0;
 		dt = 0;
 		float pow = 0;
