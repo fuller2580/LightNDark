@@ -276,7 +276,8 @@ public class PlayerController : MonoBehaviour {
 			}
 			break;
 		case 2:
-			Instantiate(waterball, this.transform.position, Quaternion.identity);
+			GameObject WB = Instantiate(waterball, this.transform.position, Quaternion.identity) as GameObject;
+			WB.GetComponent<projectile>().setPlayer(this.gameObject);
 			switch(ammo){
 				case 2:
 					sr.color = new Vector4(.25f,.25f,1f,curCol.w);

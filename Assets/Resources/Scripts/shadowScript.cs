@@ -17,7 +17,7 @@ public class shadowScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(sr){
+		if(sr && startPar){
 			//if(!isGrounded){
 			RaycastHit2D hit = Physics2D.Raycast(startPar.transform.position, -Vector3.up);
 				if(hit.collider != null){

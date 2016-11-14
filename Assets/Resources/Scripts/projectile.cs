@@ -5,6 +5,7 @@ public class projectile : MonoBehaviour {
 	public float power = 10f;
 	public GameObject CollisionEffect;
 	int inUse = 0;
+	GameObject player;
 	// Use this for initialization
 	void Start () {
 		if(this.gameObject.tag != "lavaball"){
@@ -29,6 +30,11 @@ public class projectile : MonoBehaviour {
 			Destroy(this.gameObject);
 			break;
 		case "waterball":
+			if(player != null){
+				player.transform.position = this.transform.position;
+				player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+			}
+			Destroy(this.gameObject);
 			break;
 		case "lavaball":
 			this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
@@ -58,5 +64,8 @@ public class projectile : MonoBehaviour {
 		transform.position = new Vector3(-700,-700,0);
 		this.gameObject.GetComponentInChildren<lightPower>().hitOnce = true;
 		}
+	}
+	public void setPlayer(GameObject GO){
+		player = GO;
 	}
 }
