@@ -22,9 +22,9 @@ public class gameManager : MonoBehaviour {
 	//	print(lightPower);
 	}
 
-	public void startGame(){
+	public void startGame(string lvl){
 		spawnPlayer();
-		startLevel("levelTut");
+		startLevel(lvl);
 	}
 
 	void spawnPlayer(){

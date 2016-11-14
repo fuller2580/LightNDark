@@ -10,8 +10,10 @@ public class lightPower : MonoBehaviour {
 	GameObject player;
 	bool oneStart = false;
 	[HideInInspector]public bool hitOnce = false;
+	public bool isFireball = false;
 	// Use this for initialization
 	void Start () {
+		if(isFireball) hitOnce = true;
 		if(isMainLight){
 			//DontDestroyOnLoad(this.gameObject);
 			man = GameObject.FindGameObjectWithTag("GameManager").GetComponent<gameManager>();

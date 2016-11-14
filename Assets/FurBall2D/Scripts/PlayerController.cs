@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour {
 
 	int lives = 3;
 	int ammo = 0;
+	public int stickCount = 0;
+	int fireballCount = 0;
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -41,7 +43,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject loadingScreen;
 
 	int element = 0;
-	public GameObject fireball;
+	public GameObject[] fireball;
 	public GameObject waterball;
 	public GameObject slimeball;
 
@@ -84,6 +86,7 @@ public class PlayerController : MonoBehaviour {
 			this.transform.parent = col.transform;
 		}
 		if(col.gameObject.tag == "stick"){
+			stick();
 			isSticking = true;
 			this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
 			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
@@ -255,7 +258,12 @@ public class PlayerController : MonoBehaviour {
 		Vector4 curCol = sr.color;
 		switch(el){
 		case 1:
-			Instantiate(fireball, this.transform.position, Quaternion.identity);
+			fireball[fireballCount].transform.position = this.transform.position;
+			fireball[fireballCount].transform.rotation = Quaternion.identity;
+			fireball[fireballCount].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+			fireball[fireballCount].GetComponent<projectile>().shootFireball();
+			fireballCount++;
+			if(fireballCount > fireball.Length-1) fireballCount = 0;
 			switch(ammo){
 				case 2:
 					sr.color = new Vector4(1f,.25f,.25f,curCol.w);
@@ -334,6 +342,7 @@ public class PlayerController : MonoBehaviour {
 	public void loadLevel(string level){
 		ghosts.Clear();
 		breakBlocks.Clear();
+		resetFire();
 		transform.position = getLevelPosition(level);
 		setStartSpot();
 		isLoading = true;
@@ -387,6 +396,12 @@ public class PlayerController : MonoBehaviour {
 		rig.velocity = Vector3.zero;
 		this.gameObject.transform.position = startSpot;
 	}
+	void resetFire(){
+		for(int i = 0; i < fireball.Length; i++){
+			fireball[i].transform.position = new Vector3(-700,-700,0);
+			fireball[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+		}
+	}
 	public void setGhostVolume(float vol){
 		volume = vol;
 		for(int i = 0; i < ghosts.Count; i++){
@@ -394,11 +409,23 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	void stick(){
+		if(!isSticking){
+			isSticking = true;
+			this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
+			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+		}
+		stickCount++;
+	}
+
 	public void unStick(){
-		isSticking = false;
-		this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 6.1f;
-		//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+		stickCount --;
+		if(stickCount <= 0){
+			isSticking = false;
+			this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 6.1f;
+			//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
 		//this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+		}
 	}
 
 	public float getVolume(){
