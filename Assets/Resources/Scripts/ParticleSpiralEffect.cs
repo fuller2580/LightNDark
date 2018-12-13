@@ -21,7 +21,7 @@ using System.Collections;
  
 	- Drag the prefab to the Particle Effect field of this script in the Inspector.
    ------------------------------------------------------------------------------------------------------ */
-
+/*
 // OPTIONAL: 
 // This structure mirrors the inspector settings for the effect and can be used in 
 // combination with the resetEffect and getSettings methods to alter the effect
@@ -132,7 +132,7 @@ public class ParticleSpiralEffect : MonoBehaviour
 
 
 	/* ------------------------------------------------------------------------------------------------------*/
-
+    /*
 	// Time at which the last spawn occurred.  Defaults to a "smallish" number
 	// so the first effect appears more or less immediately.  
 	private float timeOfLastSpawn = -1000.0f;
@@ -158,6 +158,7 @@ public class ParticleSpiralEffect : MonoBehaviour
 		This function spawns a new particle effect system each time it's called.  The system 
 		spawned is the prefab referenced by the public particleEffect variable.
 	   ------------------------------------------------------------------------------------------------------- */
+       /*
 	void SpawnEffect () {
 		// Instantiate the effect prefab.
 		Transform effectObject = Instantiate(particleEffect, this.transform.position, this.transform.rotation) as Transform;
@@ -353,4 +354,4 @@ public class ParticleSpiralEffect : MonoBehaviour
 			emitter.particles = p;
 		}
 	}
-}
+}*/

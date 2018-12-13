@@ -1,9 +1,9 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{E82F0370-AFE2-A0F4-641B-C1A12484D814}") = "LightNDark", "Assembly-CSharp-firstpass.csproj", "{454EBD85-37AD-16BA-274C-5B1B933A8103}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{454EBD85-37AD-16BA-274C-5B1B933A8103}"
 EndProject
-Project("{E82F0370-AFE2-A0F4-641B-C1A12484D814}") = "LightNDark", "Assembly-CSharp.csproj", "{4001BAED-F86C-78C1-E135-39E073FD416D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4001BAED-F86C-78C1-E135-39E073FD416D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +22,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

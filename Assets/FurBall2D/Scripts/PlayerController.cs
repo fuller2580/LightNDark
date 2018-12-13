@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 	[HideInInspector]public List<ghostAI> ghosts;
 	public List<Image> livesImg;
 	[HideInInspector]public List<GameObject> breakBlocks;
-	float volume = .5f;
+	float gVolume = .5f;
 	public float fear = 0;
 	public Image fearBar;
 	public GameObject loadingScreen;
@@ -403,14 +403,21 @@ public class PlayerController : MonoBehaviour {
 			fireball[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
 		}
 	}
-	public void setGhostVolume(float vol){
-		volume = vol;
-		for(int i = 0; i < ghosts.Count; i++){
-			ghosts[i].GetComponent<AudioSource>().volume = vol;
-		}
-	}
+	public void setGhostVolume(float vol)
+    {
+        gVolume = vol;
+        NewMethod(vol);
+    }
 
-	void stick(){
+    private void NewMethod(float vol)
+    {
+        for (int i = 0; i < ghosts.Count; i++)
+        {
+            ghosts[i].GetComponent<AudioSource>().volume = vol;
+        }
+    }
+
+    void stick(){
 		if(!isSticking){
 			isSticking = true;
 			this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
@@ -430,6 +437,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public float getVolume(){
-		return volume;
+		return gVolume;
 	}
 }
